@@ -1,0 +1,57 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.center_space{
+    width: 100%;
+    height: 100vh;
+place-items: center;
+display: grid;
+}
+.room_one{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    background-color: rgba(173, 147, 246, 0.602);
+    border-radius: 40px;
+    box-shadow: inset 0 0 20px rgb(0,0,0,.3);
+    animation: an_box 15s linear infinite;
+
+    
+}
+@keyframes an_box{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.room_two{
+    width: 250px;
+    height: 250px;
+    background-color: rgba(21, 21, 235, 0.959);
+    border-radius: 50%;
+    border: 24px solid transparent;
+    border-top: 24px solid #fff;
+    border-bottom: 24px solid #fff;
+    box-shadow: inset 0 0 20px rgb(0,0,0,.4);
+    animation:  route 3s linear infinite;
+
+}
+
+@keyframes route{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+h1{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 99;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:rgba(255, 255, 255, 0.876);
+    font-weight: lighter;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+}
